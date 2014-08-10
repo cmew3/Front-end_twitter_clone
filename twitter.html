@@ -1,0 +1,168 @@
+<html>
+<head>
+	<title>Twitter</title>
+	<link href="css/reset.css" rel="stylesheet">
+	<link href="css/styles.css" rel="stylesheet">
+	<link href="fonts/gotham_narrow.css" rel="stylesheet">
+
+</head>
+<body>
+	<section>
+		<section id="topbar">
+			<nav id="nav_left">
+				<ul class="topbar_nav">
+					<li>
+						<a> 
+							<span id="home"></span>
+							<span class="text">Home</span>
+						</a>
+					</li>
+					<li>
+						<a> 
+							<span id="notifications"></span>
+							<span class="text">Notifications</span>
+						</a>
+					</li>
+					<li>
+						<a> 
+							<span id="discover"></span>
+							<span class="text">Discover</span>
+						</a>
+					</li>
+					<li>
+						<a> 
+							<span id="me"></span>
+							<span class="text">Me</span>
+						</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="bird"></div>
+			<nav id="nav_right">
+				<ul class="topbar_nav">
+					<li>Search</li>
+					<li>Email</li>
+					<li>Settings</li>
+					<li>Me</li>
+				</ul>
+
+			</nav>
+		</section>
+		
+		<section id = "page-outer">
+			<section id = "page-container">
+				<aside id="left-column">
+					<section id="profile-card" class="container" >
+						Charlotte Kelly
+					</section>
+				</aside>
+
+				<section id="main">
+					<article class="container" id ="tweet-container">
+						<div class="header">
+							<h1 id="tweet-header">Tweets</h1>
+						</div>
+						<div id="tweet-stream">
+							<ul>
+
+								<li class="tweet_item">
+									<div class="tweet">
+								 	<div class="tweet-header">
+								 		<img class="avatar" src="https://pbs.twimg.com/profile_images/466972537704824832/eflEColL_bigger.png">
+								 		<strong>Financial Times</strong>
+								 		<span>@FT</span>
+								 		<span>@time</span>
+							 		</div>
+								
+											<p class="tweet-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mauris dolor, ultricies sed mauris id, hendrerit semper enim. Aenean vitae arcu ut nulla rhoncus egestas ac non ante.</png>
+									<div class="tweet-footer">
+										<a class="expand">Expand</a>
+										<ul class="tweet-options">
+											<li>
+												<a> 
+													<span id="reply"></span>
+													<span class="text">Reply</span>
+												</a>
+											</li>
+											<li>
+												<a> 
+													<span id="retweet"></span>
+													<span class="text">Retweet</span>
+												</a>
+											</li>
+											<li>
+												<a> 
+													<span id="favourite"></span>
+													<span class="text">Favourite</span>
+												</a>
+											</li>
+
+										</ul>
+									</div>
+								</div>	
+
+
+								<li class="tweet_item">
+									<div class="tweet">
+									 	<div class="tweet-header">
+									 		<img class="avatar" src="https://pbs.twimg.com/profile_images/466972537704824832/eflEColL_bigger.png">
+									 		<strong>Financial Times</strong>
+									 		<span>@FT</span>
+									 		<span>@time</span>
+								 		</div>
+								
+										<p class="tweet-text">
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mauris dolor, ultricies sed mauris id, hendrerit semper enim. Aenean vitae arcu ut nulla rhoncus egestas ac non ante.
+										</p>
+										<div class="tweet-text expanded-text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mauris dolor, ultricies sed mauris id, hendrerit semper enim. Aenean vitae arcu ut nulla rhoncus egestas ac non ante.
+										</div>
+										<div class="tweet-footer">
+											<a class="expand">Expand</a>
+											<ul class="tweet-options">
+												<li>
+													<a> 
+														<span id="reply"></span>
+														<span class="text">Reply</span>
+													</a>
+												</li>
+												<li>
+													<a> 
+														<span id="retweet"></span>
+														<span class="text">Retweet</span>
+													</a>
+												</li>
+												<li>
+													<a> 
+														<span id="favourite"></span>
+														<span class="text">Favourite</span>
+													</a>
+												</li>
+
+											</ul>
+									</div>
+								</div>	
+								</li>
+
+							</ul>
+						</div>
+					</article>
+				</section>
+
+
+
+				<aisde id="right-column">
+					<section id="who-to-follow" class="container" >
+						Some content about who t follow
+					</section>
+				</aside>
+
+			</section>
+
+		</section>
+	</section>
+</body>
+</html>
+
+<script src="javascript/jquery.js"></script>
+<script src="javascript/mustache.js"></script>
+<script src="javascript/main.js"></script>
