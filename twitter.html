@@ -63,86 +63,9 @@
 							<h1 id="tweet-header">Tweets</h1>
 						</div>
 						<div id="tweet-stream">
+
 							<ul>
-
-								<li class="tweet_item">
-									<div class="tweet">
-								 	<div class="tweet-header">
-								 		<img class="avatar" src="https://pbs.twimg.com/profile_images/466972537704824832/eflEColL_bigger.png">
-								 		<strong>Financial Times</strong>
-								 		<span>@FT</span>
-								 		<span>@time</span>
-							 		</div>
-								
-											<p class="tweet-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mauris dolor, ultricies sed mauris id, hendrerit semper enim. Aenean vitae arcu ut nulla rhoncus egestas ac non ante.</png>
-									<div class="tweet-footer">
-										<a class="expand">Expand</a>
-										<ul class="tweet-options">
-											<li>
-												<a> 
-													<span id="reply"></span>
-													<span class="text">Reply</span>
-												</a>
-											</li>
-											<li>
-												<a> 
-													<span id="retweet"></span>
-													<span class="text">Retweet</span>
-												</a>
-											</li>
-											<li>
-												<a> 
-													<span id="favourite"></span>
-													<span class="text">Favourite</span>
-												</a>
-											</li>
-
-										</ul>
-									</div>
-								</div>	
-
-
-								<li class="tweet_item">
-									<div class="tweet">
-									 	<div class="tweet-header">
-									 		<img class="avatar" src="https://pbs.twimg.com/profile_images/466972537704824832/eflEColL_bigger.png">
-									 		<strong>Financial Times</strong>
-									 		<span>@FT</span>
-									 		<span>@time</span>
-								 		</div>
-								
-										<p class="tweet-text">
-											Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mauris dolor, ultricies sed mauris id, hendrerit semper enim. Aenean vitae arcu ut nulla rhoncus egestas ac non ante.
-										</p>
-										<div class="tweet-text expanded-text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mauris dolor, ultricies sed mauris id, hendrerit semper enim. Aenean vitae arcu ut nulla rhoncus egestas ac non ante.
-										</div>
-										<div class="tweet-footer">
-											<a class="expand">Expand</a>
-											<ul class="tweet-options">
-												<li>
-													<a> 
-														<span id="reply"></span>
-														<span class="text">Reply</span>
-													</a>
-												</li>
-												<li>
-													<a> 
-														<span id="retweet"></span>
-														<span class="text">Retweet</span>
-													</a>
-												</li>
-												<li>
-													<a> 
-														<span id="favourite"></span>
-														<span class="text">Favourite</span>
-													</a>
-												</li>
-
-											</ul>
-									</div>
-								</div>	
-								</li>
-
+								<!-- tweet template -->
 							</ul>
 						</div>
 					</article>
@@ -166,3 +89,52 @@
 <script src="javascript/jquery.js"></script>
 <script src="javascript/mustache.js"></script>
 <script src="javascript/main.js"></script>
+
+<template id="tweet-template">
+	<li class="tweet_item">
+		<div class="tweet">
+
+		 	<div class="tweet-header">
+		 		<img class="avatar" src="{{avatar}}">
+		 		<strong>{{user}}</strong>
+		 		<span>{{handle}}</span>
+		 		<span>@time</span>	
+	 		</div>
+	
+			<p class="tweet-text">
+				{{ text }}
+			</p>
+
+			<div class="tweet-text expanded-text"> {{ expanded_text}}
+			</div>
+
+			<div class="tweet-footer">
+				<a class="expand">Expand</a>
+				<ul class="tweet-options">
+					<li>
+						<a> 
+							<span id="reply"></span>
+							<span class="text">Reply</span>
+						</a>
+					</li>
+					<li>
+						<a> 
+							<span id="retweet"></span>
+							<span class="text">Retweet</span>
+						</a>
+					</li>
+					<li>
+						<a> 
+							<span id="favourite"></span>
+							<span class="text">Favourite</span>
+						</a>
+					</li>
+				</ul>
+			</div> 
+			<!-- tweet footer end -->
+
+		</div>	
+		<!-- tweet end -->
+	</li>
+
+</template>

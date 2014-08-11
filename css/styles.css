@@ -129,12 +129,12 @@ height: 21px;
 /*Tweet box*/
 
 .tweet_item {
-	
+	list-style: none;
 	border-bottom: 1px solid #e1e8ed;
 }
 
 .tweet {
-	margin-left: 58px;
+	margin-left: 62px;
 	font-family: "Helvetica Neue",Arial,sans-serif;
 	padding: 5px;
 }
@@ -149,28 +149,35 @@ border-radius: 5px 5px 0 0;
 
 #tweet-header {
 	color: #66757f;
-font-size: 22px;
-font-weight: 300;
-line-height: 22px;
-vertical-align: bottom;
+	font-size: 22px;
+	font-weight: 300;
+	line-height: 22px;
+	vertical-align: bottom;
+	padding: 5px;
 }
+
 
 .avatar {
 	width: 48px;
 	height: 48px;
 	border-radius: 9px;
 	float: left;
-	margin-left: -58px;
+	margin-left: -60px;
 	padding: 5px;		
 
 }
 strong {
 	color: black;
 	font-weight: bold;
+	padding: 5px;
 }
 
+.tweet-text {
+	padding: 5px;
+}
 .expanded-text {
 	display: none;
+	padding: 5px;
 }
 .tweet-footer {
 	color: rgb(200, 200, 200);	
